@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js"></script>
+
+</head>
+<body>
+    <div id="vue-app">
+        <h1>{{greet('afternoon')}}</h1>
+        <p>{{ name }}</p>
+        <a v-bind:href="website">一二三</a> <!-- v-bind 属性绑定-->
+        <p v-html="websiteTap"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

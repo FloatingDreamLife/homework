@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="vue-app">
+    <button v-on:click="add(1)">加一</button><!-- 还可写成@click="add(1)"    结果一样-->
+    <button v-on:click="subtract(1)">减一</button>
+    <button v-on:dblclick="add(10)">加十</button>
+    <button v-on:dblclick="subtract(10)">减十</button>
+
+    <p>{{age}}</p>
+    <div id="cavens" style="text-align: center;padding:200px 20px;width:600px;border:1px solid #333" v-on:mousemove="move()">
+        {{x}},{{y}}
+    </div>
+    <script src="app-2.js"></script>
+</div>
+</body>
+</html>
